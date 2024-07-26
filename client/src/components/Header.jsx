@@ -29,7 +29,11 @@ export default function Header(){
                     <FaMoon />
                 </Button>
           <Link to='/sign-in'>
-            <Button gradientDuoTone='purpleToBlue' outline>
+            <Button 
+                className="flex items-center justify-center text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-purple-500 hover:to-indigo-500 p-4 m-4" 
+                style={{ width: '100px', height: '40px' }}
+                outline
+                >
               Sign In
             </Button>
           </Link>
