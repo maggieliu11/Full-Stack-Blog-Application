@@ -8,9 +8,12 @@ export default function Header(){
     const path = useLocation().pathname;
     return (
         <Navbar className="border-b-2">
-            <Link to="/" className="self-cente whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white">
-                <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 
-                via-purple-500 to-pink-500 rounded-lg text-white'>Maggie's</span>
+            <Link
+        to='/'
+        className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'
+      >
+                <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
+                    Maggie's</span>
                 Blog
             </Link>
             <form>
@@ -25,15 +28,11 @@ export default function Header(){
                 <AiOutlineSearch />
             </Button>
             <div className="flex gap-2 md:order-2">
-                <Button className='w-12 h-10 hidden sm: inline' color='gray' pill>
+                <Button className='w-12 h-10 hidden sm:inline' color='grey' pill>
                     <FaMoon />
                 </Button>
           <Link to='/sign-in'>
-            <Button 
-                className="flex items-center justify-center text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-purple-500 hover:to-indigo-500 p-4 m-4" 
-                style={{ width: '100px', height: '40px' }}
-                outline
-                >
+            <Button gradientDuoTone='purpleToBlue' outline>
               Sign In
             </Button>
           </Link>
