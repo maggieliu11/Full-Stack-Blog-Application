@@ -7,12 +7,15 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import 'tailwindcss/tailwind.css';
 import 'flowbite/dist/flowbite.css';
+import ThemeProvider from './components/ThemeProvider.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <PersistGate persistor={persistor}>
   <Provider store={store}>
-    <App />
+    <ThemeProvider>
+        <App />
+    </ThemeProvider>
   </Provider>
   </PersistGate>
 )
