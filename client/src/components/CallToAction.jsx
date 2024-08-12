@@ -8,7 +8,7 @@ export default function CallToAction() {
                 Want to learn more about me?
             </h2>
             <p className='text-gray-500 my-2'>
-                Checkout this links
+                Checkout this link
             </p>
             <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
                 <a href="https://linkedin.com/in/jingkai-liu-b8a367290" target='_blank' rel='noopener noreferrer'>
