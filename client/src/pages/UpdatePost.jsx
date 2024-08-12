@@ -123,17 +123,17 @@ export default function UpdatePost() {
             }
             value={formData.title}
           />
-          <Select
-            onChange={(e) =>
-              setFormData({ ...formData, category: e.target.value })
-            }
-            value={formData.category}
-          >
-            <option value='uncategorized'>Select a category</option>
-            <option value='javascript'>JavaScript</option>
-            <option value='reactjs'>React.js</option>
-            <option value='nextjs'>Next.js</option>
-          </Select>
+<Select
+  onChange={(e) =>
+    setFormData({ ...formData, category: e.target.value })
+  }
+  value={formData.category}
+>
+  <option value='uncategorized'>Select a category</option>
+  <option value='study'>Study</option>
+  <option value='job'>Job</option>
+  <option value='life'>Life</option>
+</Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
           <FileInput
