@@ -1,13 +1,11 @@
-// src/pages/Projects.jsx
-import React from 'react';
+import CallToAction from '../components/CallToAction';
 
-const Projects = () => {
+export default function Projects() {
   return (
-    <div>
-      <h1>Projects</h1>
-      <p>Here are some projects.</p>
-    </div>
-  );
-};
-
-export default Projects;
+    <div className='min-h-screen max-w-2xl mx-auto flex justify-center items-center flex-col gap-6 p-3'>
+    <h1 className='text-3xl font-semibold'>Projects</h1>
+    <p className='text-md text-gray-500'>Check out my LinkedIn profile to explore my projects and professional experiences.</p>
+    <CallToAction />
+  </div>
+)
+}
